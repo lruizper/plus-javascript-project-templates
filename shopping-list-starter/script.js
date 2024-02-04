@@ -1,4 +1,4 @@
-let shoppingListItems = ["Milk", "Bread", "Eggs", "Butter", "Cheese"];
+let shoppingListItems = ["Apples", "Banana", "Cauliflower", "Dates", "Eggs"];
 const shoppingList = document.getElementById("shopping-list-items");
 
 
