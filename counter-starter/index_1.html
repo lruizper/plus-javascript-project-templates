@@ -7,20 +7,20 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>Counter-LRP</title>
+        <title>Custom-counter-LRP</title>
         <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
         <div id="wrapper">
-            <p id="number">0</p>
+            <input type="number" id="number" name="myNumber">
             <div id="button-wrapper">
             <input type="button" value="+1" id="addition" onclick="add(1)"/>
             <input type="button" value="+10" id="addition" onclick="add(10)" />
             <input type="button" value="Reset" id="reset" onclick="reset()" />
             <input type="button" value="-1" id="subtraction" onclick="subtract(1)" />
             <input type="button" value="-10" id="subtraction" onclick="subtract(10)" />
-            </div>
+        </div>
         </div>
     <script src="script.js"></script> 
     <!-- giving access to the script -->
