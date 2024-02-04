@@ -2,8 +2,8 @@ function add(step) {
     let numberElement = document.getElementById('number');
     let number = numberElement.innerText;
     number =parseInt(number)+step;
-    numberElement.value = number;
-    // console.log(number);
+    numberElement.innerText=number;
+    console.log(number);
 }
 
 function subtract(step) {
