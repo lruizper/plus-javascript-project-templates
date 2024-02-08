@@ -1,5 +1,5 @@
 body {
-    background-color: #a4eeee95;
+    background-color: #315a98c6;
     font-family: sans-serif;
     color: #fff;
 }
@@ -43,10 +43,13 @@ input[type="text"] {
 input[type="button"]#new-task-button {
     flex-grow: 1;
 }
-
 input[type="button"] {
     background: #b30049;
     color: #fff;
+}
+input[type="button"]:hover {
+    background: #ff4d88;
+    box-shadow: gray 2px 2px 2px;
 }
 
 input[type="button"]:hover {
