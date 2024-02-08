@@ -1,5 +1,5 @@
 body {
-    background-color: #070d0d;
+    background-color: #a4eeee95;
     font-family: sans-serif;
     color: #fff;
 }
@@ -49,6 +49,10 @@ input[type="button"] {
     color: #fff;
 }
 
+input[type="button"]:hover {
+    background: #ff4d88;
+    box-shadow: gray 2px 2px 2px;
+}
 .complete {
     text-decoration: line-through;
 }

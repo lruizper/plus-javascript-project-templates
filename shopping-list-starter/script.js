@@ -1,6 +1,13 @@
 let shoppingListItems = ["Apples", "Banana", "Cauliflower", "Dates", "Eggs"];
 const shoppingList = document.getElementById("shopping-list-items");
 
+let listElement = document.getElementById("shopping-list-items");
+for (const shoppingItem of shoppingListItems) {
+    let itemElement = document.createElement("li");
+    itemElement.innerText = shoppingItem;
+    listElement.appendChild(itemElement);
+    // console.log(shoppingItem);
+}
 
 function updateItems() {
     shoppingList.innerHTML = "";
@@ -11,13 +18,7 @@ function updateItems() {
     }
 }
 
-let listElement = document.getElementById("shopping-list-items");
-for (const shoppingItem of shoppingListItems) {
-    let itemElement = document.createElement("li");
-    itemElement.innerText = shoppingItem;
-    listElement.appendChild(itemElement);
-    // console.log(shoppingItem);
-}
+
 
 function addItem() {
     let input = document.getElementById("new-item-text");
