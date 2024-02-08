@@ -32,7 +32,12 @@ function toggleComplete(index) {
 }
 
 function addTask() {
-    
+    const newTask = document.getElementById("new-task-text");
+    const task = newTask.value;
+    todoTasks.push(task);
+    taskStatus.push(false);
+    newTask.value = "";
+    updateTodoList();
     
 }
 
