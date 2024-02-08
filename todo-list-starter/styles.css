@@ -52,6 +52,6 @@ input[type="button"]:hover {
     box-shadow: gray 2px 2px 2px;
 }
 
-.completed {
+.complete {
     text-decoration: line-through;
 }
