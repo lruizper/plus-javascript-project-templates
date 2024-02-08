@@ -20,7 +20,11 @@ for (const [index, task ] of todoTasks.entries()) {
 // add a button to mark the task as complete
     const completeButtonElement = document.createElement("input");
     completeButtonElement.type = "button";
-    completeButtonElement.value = "Completed";
+    completeButtonElement.value = "Mark done";
+// when the button is clicked, call the toggleComplete function and pass the index of the task
+    completeButtonElement.onclick = function() {
+        toggleComplete(index);
+    };
     newTask.appendChild(completeButtonElement);
 }
 
@@ -31,4 +35,11 @@ function updateTodoList() {}
 
 function createNewTodoItemElement(task, index) {}
 
-function toggleComplete(index) {}
+function toggleComplete(index) {
+    if (taskStatus[index]==false) {
+        taskStatus[index]=true;
+    } else {
+        taskStatus[index]=false;
+    }
+    console.log(taskStatus);
+}
