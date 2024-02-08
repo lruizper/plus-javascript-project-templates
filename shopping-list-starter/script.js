@@ -32,3 +32,8 @@ function clearList() {
     shoppingListItems = [];
     updateItems();
   }
+
+function removeLastItem() {
+    shoppingListItems.pop();
+    updateItems();
+}

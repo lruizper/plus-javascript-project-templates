@@ -15,10 +15,13 @@
     <div id="paper">
         <div id="content-area">
             <h1>My Shopping List</h1>
+            <input id="reset-shopping-list" type="button" value="Clear Shopping List"
+            onclick="clearList()" />
             <ul id="shopping-list-items"></ul>
             <div id="inputs">
+                <input type="button" value="remove last item" onclick="removeLastItem()" />
                 <div id="new-item-input">
-                    <input id="new-item-text" type="text" placeholder="Milk" />
+                    <input id="new-item-text" type="text" placeholder="add item here" />
                     <input
                     id="new-item-button"
                     type="button"
@@ -26,12 +29,7 @@
                     onclick="addItem()"
                     />
                 </div>
-                <input
-                id="reset-shopping-list"
-                type="button"
-                value="Clear Shopping List"
-                onclick="clearList()"
-                />    
+                
             </div>
         </div>
     </div>
